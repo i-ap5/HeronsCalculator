@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Triangle Calculator</title>
+    <title>Advanced Triangle Calculator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -11,38 +11,57 @@
 </head>
 <body>
     <div class="main-container">
-        <h1>Hello Pradeep</h1>
-        <div class="calculator-card">
-            <h2>Triangle Calculator</h2>
-            
-            <div class="triangle-image-container">
-                <!-- UPDATE THIS LINE with your SVG filename -->
-                <img src="triangle.svg" alt="Triangle with sides a, b, and c">
+        <div class="calculator-grid">
+
+            <!-- Left Column: The Calculator -->
+            <div class="input-section">
+                <h2>Pradeep's Calculator</h2>
+                <p class="subtitle">This calculator was developed by Arun for Pradeep.</p>
+
+                <div class="triangle-image-container">
+                    <img src="triangle.svg" alt="Triangle with sides a, b, and c">
+                </div>
+                <div class="input-group">
+                    <label for="sideA">Side a</label>
+                    <input type="number" id="sideA" placeholder="Enter lenght of side A">
+                </div>
+                <div class="input-group">
+                    <label for="sideB">Side b</label>
+                    <input type="number" id="sideB" placeholder="Enter lenght of side B">
+                </div>
+                <div class="input-group">
+                    <label for="sideC">Side c</label>
+                    <input type="number" id="sideC" placeholder="Enter lenght of side C">
+                </div>
             </div>
 
-            <div class="input-group">
-                <label for="sideA">Side a</label>
-                <input type="number" id="sideA" placeholder="Enter length of side a">
-            </div>
-            <div class="input-group">
-                <label for="sideB">Side b</label>
-                <input type="number" id="sideB" placeholder="Enter length of side b">
-            </div>
-            <div class="input-group">
-                <label for="sideC">Side c</label>
-                <input type="number" id="sideC" placeholder="Enter length of side c">
-            </div>
-            <button class="calculate-btn" onclick="calculate()">Calculate</button>
-            <div class="results-container">
-                <div class="result-item">
-                    <span class="label">Area</span>
-                    <span id="area" class="value">0.00</span>
+            <!-- Right Column: Results & Explanation -->
+            <div class="explanation-section">
+                <div id="error-container"></div>
+                <div class="results-card">
+                   <div class="card-header">
+                        <h3>Results</h3>
+                        <button id="reset-btn">Reset</button> <!-- The button is now here -->
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Perimeter</span>
+                        <span id="perimeter" class="value">0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Area</span>
+                        <span id="area" class="value primary-value">0.00</span>
+                    </div>
                 </div>
-                <div class="result-item">
-                    <span class="label">Perimeter</span>
-                    <span id="perimeter" class="value">0.00</span>
+                <div class="info-card">
+                    <h3>About Heron's Formula</h3>
+                    <p>Heron's formula allows you to find the area of any triangle when you know the lengths of all three sides (a, b, and c).</p>
+                    <p>First, calculate the semi-perimeter (s):</p>
+                    <code>s = (a + b + c) / 2</code>
+                    <p>Then, find the area using the formula:</p>
+                    <code>Area = √s(s-a)(s-b)(s-c)</code>
                 </div>
             </div>
+
         </div>
     </div>
     <script src="script.js"></script>
