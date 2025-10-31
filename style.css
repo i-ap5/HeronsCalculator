@@ -140,6 +140,8 @@ h4 { font-weight: 500; color: #2a3b4c; margin-top: 0; margin-bottom: 5px; }
         text-align: center;
         font-size: 1.8em; /* Slightly smaller title for mobile */
     }
+    h2 { font-weight: 600; color: #2a3b4c; margin-top: 0; margin-bottom: 10px; }
+
 
     .calculator-grid {
         grid-template-columns: 1fr; /* Stack the columns */
