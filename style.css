@@ -251,6 +251,10 @@
             .result-value {
                 font-size: 32px;
             }
+            .error-message {
+            margin: 0 16px 0px 16px;
+            
+        }
         }
 
         /* Smooth animations */
