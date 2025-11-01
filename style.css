@@ -243,7 +243,7 @@
             .inputs-section,
             .results-section,
             .actions-section {
-                padding: 24px;
+                padding: 24px 16px;
             }
 
             .result-value {
