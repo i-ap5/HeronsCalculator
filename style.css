@@ -29,8 +29,8 @@
             margin: 5px;
             border-radius: 15px 15px 0 0;
             padding: 48px 32px;
-            border-bottom: #0c0c0c0c 1px solid;
-            /* background: linear-gradient(135deg, #f2f2f2 0%, #f4f4f4 100%); */
+            /* border-bottom: #0c0c0c0c 1px solid; */
+            background: linear-gradient(135deg, #f0f0f0 0%, #f4f4f4 100%);
         }
 
         #triangle-container {
@@ -41,7 +41,7 @@
         }
 
         #triangle-svg {
-            fill: #0c0c0c10;
+            fill: #acacac;
             stroke: #0c0c0c;
             stroke-width: 2;
             stroke-linejoin: round;
@@ -241,9 +241,11 @@
             }
 
             .inputs-section,
-            .results-section,
+            .results-section{
+                padding: 16px;
+            }
             .actions-section {
-                padding: 24px 16px;
+                padding: 0px 16px 24px 16px;
             }
 
             .result-value {
